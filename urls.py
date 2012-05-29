@@ -4,8 +4,10 @@ from amble.views import hello
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+                       '',
                        ('^hello/$', hello),
+                       ('^$', hello),
     # Examples:
     # url(r'^$', 'amble.views.home', name='home'),
     # url(r'^amble/', include('amble.foo.urls')),
